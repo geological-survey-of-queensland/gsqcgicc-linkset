@@ -1,0 +1,508 @@
+@prefix : <http://linked.data.gov.au/dataset/gsqcgicc/statement/> .
+@prefix cgicc: <http://resource.geosciml.org/classifier/cgi/commodity-code/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gsqcc: <http://linked.data.gov.au/def/gsq-commodity-code/> .
+@prefix loci: <http://linked.data.gov.au/def/loci#> .
+@prefix method: <http://linked.data.gov.au/dataset/gsqcgicc/method> .
+@prefix nick: <http://linked.data.gov.au/dataset/gsqcgicc/nick> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://linked.data.gov.au/dataset/gsqcgicc> a loci:Linkset ;
+    dct:created "2019-10-09"^^xsd:date ;
+    dct:creator nick: ;
+    dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
+between Concepts in the [GSQ Commodity Codes vocabulary](http://linked.data.gov.au/def/gsq-commodity-codes) and Concepts in the [CGI Commodity Codes vocabulary](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code). The first is Queensland's list and the second is the international geoscience consortium's list.
+
+Only the following SKOS mapping properties are so far used as link predicates: `skos:exactMatch`."""@en ;
+    dct:issued "2019-10-09"^^xsd:date ;
+    dct:modified "2019-10-09"^^xsd:date ;
+    dct:publisher [ sdo:identifier <http://catalogue.linked.data.gov.au/org/gsq> ;
+            sdo:name "Geological Survey of Queensland" ] ;
+    dct:title "GSQ / CGI Commodity Codes Linkset" ;
+    void:linkPredicate skos:exactMatch ;
+    void:objectsTarget <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
+    void:subjectsTarget <http://linked.data.gov.au/def/gsq-commodity-codes> ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:agent nick: ;
+                    prov:hadPlan method: ] ] .
+
+nick: a owl:NamedIndividual,
+        sdo:Person ;
+    sdo:email "nicholas.car@surroundaustralia.com" ;
+    sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+    sdo:memberOf [ sdo:identifier <https://surroundaustralia.com> ;
+            sdo:name "SURROUND Australia Pty Ltd" ] ;
+    sdo:name "Nicholas J. Car" .
+
+method: a prov:Plan ;
+    rdfs:label "Semi-manual label comparison" ;
+    rdfs:comment "The method used to create this linkset was just a prefLabel comparison (exact matching) in Excel." ;
+    prov:generatedAtTime "2019-10-09"^^xsd:date ;
+    prov:wasAttributedTo :nick .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:apatite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:apatite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:aquamarine ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:aquamarine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:arsenic ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:arsenic .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:asbestos ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:asbestos .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:barium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:barium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:carnallite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:carnallite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:bauxite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:bauxite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:bentonite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:bentonite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:beryl ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:beryl .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:beryllium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:beryllium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:bismuth ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:bismuth .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:black-coal ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:black-coal .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:brick-clay ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:brick-clay .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:bromine ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:bromine .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:cadmium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:cadmium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:calcite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:calcite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:coal ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:coal .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:cerium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:cerium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:chalcedony ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:chalcedony .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:chrysoprase ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:chrysoprase .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:chrysotile ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:chrysotile .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:cobalt ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:cobalt .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:copper ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:copper .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:crocidolite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:crocidolite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:dysprosium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:dysprosium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:emerald ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:emerald .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:erbium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:erbium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:clay ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:clay .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:europium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:europium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:evaporite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:evaporite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:fullers-earth ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:fullers-earth .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:gadolinium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:gadolinium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:holmium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:holmium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:kyanite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:kyanite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:lanthanum ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:lanthanum .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:lead ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:lead .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:lime ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:lime .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:lutetium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:lutetium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:gemstones ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:gemstone .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:neodymium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:neodymium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:nickel ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:nickel .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:palygorskite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:palygorskite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:peat ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:peat .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:praseodymium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:praseodymium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:promethium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:promethium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:pyrophyllite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:pyrophyllite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:samarium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:samarium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:sillimanite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:sillimanite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:soda-ash ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:soda-ash .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:agate ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:agate .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:terbium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:terbium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:thulium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:thulium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:ytterbium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:ytterbium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:yttrium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:yttrium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:zinc ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:zinc .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:brown-coal ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:brown-coal .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:aggregate ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:aggregate .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:aluminium ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:aluminium .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:alunite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:alunite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:andalusite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:andalusite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:amethyst ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:amethyst .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:anhydrite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:anhydrite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:anthophyllite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:anthophyllite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:anthracite ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:anthracite .
+
+[] a rdf:Statement ;
+    loci:hadGenerationMethod method: ;
+    dct:created "2019-10-09"^^xsd:date ;
+    rdf:object cgicc:antimony ;
+    rdf:predicate skos:exactMatch ;
+    rdf:subject gsqcc:antimony .
