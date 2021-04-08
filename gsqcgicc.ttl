@@ -1,11 +1,11 @@
-@prefix : <http://linked.data.gov.au/dataset/gsqcgicc/statement/> .
+@prefix : <https://linked.data.gov.au/dataset/gsqcgicc/statement/> .
 @prefix cgicc: <http://resource.geosciml.org/classifier/cgi/commodity-code/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix gsqcc: <http://linked.data.gov.au/def/gsq-commodity-code/> .
-@prefix loci: <http://linked.data.gov.au/def/loci#> .
-@prefix method: <http://linked.data.gov.au/dataset/gsqcgicc/method> .
-@prefix nick: <http://linked.data.gov.au/dataset/gsqcgicc/nick> .
+@prefix gsqcc: <https://linked.data.gov.au/def/gsq-commodity-code/> .
+@prefix loci: <https://linked.data.gov.au/def/loci#> .
+@prefix method: <https://linked.data.gov.au/dataset/gsqcgicc/method> .
+@prefix nick: <https://linked.data.gov.au/dataset/gsqcgicc/nick> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -18,21 +18,21 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/dataset/gsqcgicc> a loci:Linkset ;
+<https://linked.data.gov.au/dataset/gsqcgicc> a loci:Linkset ;
     dct:created "2019-10-09"^^xsd:date ;
     dct:creator nick: ;
     dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping)
-between Concepts in the [GSQ Commodity Codes vocabulary](http://linked.data.gov.au/def/gsq-commodity-codes) and Concepts in the [CGI Commodity Codes vocabulary](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code). The first is Queensland's list and the second is the international geoscience consortium's list.
+between Concepts in the [GSQ Commodity Codes vocabulary](https://linked.data.gov.au/def/gsq-commodity-codes) and Concepts in the [CGI Commodity Codes vocabulary](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code). The first is Queensland's list and the second is the international geoscience consortium's list.
 
 Only the following SKOS mapping properties are so far used as link predicates: `skos:exactMatch`."""@en ;
     dct:issued "2019-10-09"^^xsd:date ;
     dct:modified "2019-10-09"^^xsd:date ;
-    dct:publisher [ sdo:identifier <http://catalogue.linked.data.gov.au/org/gsq> ;
+    dct:publisher [ sdo:identifier <https://linked.data.gov.au/org/gsq> ;
             sdo:name "Geological Survey of Queensland" ] ;
     dct:title "GSQ / CGI Commodity Codes Linkset" ;
     void:linkPredicate skos:exactMatch ;
     void:objectsTarget <http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> ;
-    void:subjectsTarget <http://linked.data.gov.au/def/gsq-commodity-codes> ;
+    void:subjectsTarget <https://linked.data.gov.au/def/gsq-commodity-codes> ;
     prov:wasGeneratedBy [ a prov:Activity ;
             prov:qualifiedAssociation [ a prov:Association ;
                     prov:agent nick: ;
